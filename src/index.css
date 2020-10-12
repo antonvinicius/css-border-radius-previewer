@@ -1,13 +1,81 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #020126;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  background-color: #D98E32;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 25px;
+}
+
+header {
+  box-shadow: 0px 8px 15px 1px rgba(0, 0, 0, 0.45);
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.options {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  background-color: #4541BF;
+  padding: 20px;
+  color: white;
+}
+
+.input-group {
+  padding: 20px;
+}
+
+.box {
+  margin: auto;
+  background-color: #D98E32;
+  width: 300px;
+  height: 300px;
+}
+
+.copy {
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+@media (min-width: 1150px) {
+  header h1 {
+    font-size: 35px;
+  }
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    border-radius: 20px;
+  }
+  .group-input {
+    width: 40%;
+  }
 }

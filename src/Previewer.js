@@ -1,12 +1,8 @@
 import React from 'react'
-
 import StyleCode from "./StyleCode"
 
 export default function Previewer({ borderTopRightRadius, borderTopLeftRadius, borderBottomRightRadius, borderBottomLeftRadius }) {
     const style = {
-        backgroundColor: "black",
-        width: "300px",
-        height: "300px",
         borderTopRightRadius: borderTopRightRadius + "%",
         borderTopLeftRadius: borderTopLeftRadius + "%",
         borderBottomRightRadius: borderBottomRightRadius + "%",
@@ -15,7 +11,7 @@ export default function Previewer({ borderTopRightRadius, borderTopLeftRadius, b
     console.log(borderTopRightRadius)
     return (
         <>
-            <div style={style}>
+            <div className="box" style={style}>
             </div>
             <StyleCode 
                 borderTopRightRadius={borderTopRightRadius}
