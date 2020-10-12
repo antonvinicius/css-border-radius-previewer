@@ -6,7 +6,7 @@ export default function StyleCode({ borderTopRightRadius, borderTopLeftRadius, b
     return (
         <div>
             <button><h1>Click me to copy</h1></button> <br />
-            <textarea name="css" id="css" readOnly={true} cols="40" rows="7" value={text}>
+            <textarea style={{resize: "none"}} name="css" id="css" readOnly={true} cols="40" rows="7" value={text}>
             </textarea>
         </div>
     )
