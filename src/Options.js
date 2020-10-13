@@ -25,7 +25,7 @@ export default function Options() {
                     <input type="range" max="50" name="bbright" value={borderBottomRight} onChange={e => setBorderBottomRight(e.target.value)} />
                 </div>
                 <div className="input-group">
-                    <h4>Border Bottom Right</h4>
+                    <h4>Border Bottom Left</h4>
                     <input type="range" max="50" name="bbleft" value={borderBottomLeft} onChange={e => setBorderBottomLeft(e.target.value)} />
                 </div>
             </div>
