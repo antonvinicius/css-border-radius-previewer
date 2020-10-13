@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useRef } from 'react'
 
 export default function StyleCode({ borderTopRightRadius, borderTopLeftRadius, borderBottomRightRadius, borderBottomLeftRadius }) {
-    const [copySuccess, setCopySuccess] = useState('')
+    const [, setCopySuccess] = useState('')
     const textArea = useRef()
     const text = `{\nborder-top-right-radius: ${borderTopRightRadius}%;\nborder-top-left-radius: ${borderTopLeftRadius}%;\nborder-bottom-right-radius: ${borderBottomRightRadius}%;\nborder-bottom-left-radius: ${borderBottomLeftRadius}%;\n}`
 
